@@ -1,7 +1,7 @@
 class Human {
     //destructuring the array
 
-    constructor([name,age]){
+    constructor(name,age){
         this.age = age;
         this.name = name;
     }
@@ -9,7 +9,7 @@ class Human {
 
 class Person extends Human{
     constructor(...age){
-        super(["Aman",age]);
+        super("Aman",age);
     }
     printAge() {
         console.log(this.age);
